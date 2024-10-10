@@ -14,10 +14,14 @@ export function useVideoList() {
   const loading = ref(false);
   async function listVideos() {
     try {
+      loading.value = true;
       const response = await videoService.getVideos(currentPage.value);
       setProp(response.data.videos, response.data.pages);
+      
     } catch (error) {
       console.error("Erro ao buscar vídeos:", error);
+    } finally{
+      loading.value = false;
     }
   }
 
