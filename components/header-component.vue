@@ -51,7 +51,6 @@ const emit = defineEmits(['update-search', 'field-empty']);
 
 const localSearchTerm = ref(props.searchTerm);
 watch(localSearchTerm, (newValue) => {
-    console.log(newValue)
     if (newValue === '') { emit('field-empty', newValue) };
 })
 function emitSearch() {
