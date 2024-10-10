@@ -83,6 +83,7 @@ export function useVideoList() {
     nextPage,
     backPage,
     getVideo,
+    loading,
     fieldEmpty
   };
 }
