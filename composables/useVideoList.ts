@@ -11,7 +11,7 @@ export function useVideoList() {
   const videoService = new VideoService();
   const video = ref<Video>();
   const router = useRouter();
-
+  const loading = ref(false);
   async function listVideos() {
     try {
       const response = await videoService.getVideos(currentPage.value);
@@ -25,10 +25,13 @@ export function useVideoList() {
     try {
       const route = useRoute();
       const { id } = route.params;
+     loading.value = true;
       const response = await videoService.searchById(id);
       video.value = response.data;
     } catch (error) {
       console.error("Error ao listar videos", error);
+    } finally{
+      loading.value = false;
     }
   }
   function updateSearchTerm(search: string) {
