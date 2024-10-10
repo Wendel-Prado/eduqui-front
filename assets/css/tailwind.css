@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+.input-field {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
+}
+
+.input-dark {
+  @apply dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.button {
+  @apply w-full px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+
+.card {
+  @apply w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow-md dark:bg-gray-800 border border-gray-200;
+}
+
+.section-title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white;
+}
+
+.section-subtitle {
+  @apply mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400;
+}
+
+.heading {
+  @apply mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white;
+}
+
+.label {
+  @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white;
+}
+
+.dropdown {
+  @apply z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600;
+}
+
+.navbar {
+  @apply bg-gray-900 border-b border-gray-800;
+}
+
+.navbar-container {
+  @apply max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4;
+}
+
+.navbar-logo {
+  @apply flex items-center space-x-3 rtl:space-x-reverse;
+}
+
+.navbar-link {
+  @apply block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white;
+}
+
+.navbar-toggle-button {
+  @apply md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1;
+}
+.navigation-button-back {
+  @apply flex items-center justify-center px-4 h-10 text-base font-medium text-white bg-gray-800 rounded-s hover:bg-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white;
+}
+.navigation-button-next {
+  @apply flex items-center justify-center px-4 h-10 text-base font-medium text-white bg-gray-800 border-0 border-s border-gray-700 rounded-e hover:bg-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white;
+}
+.user-menu-button {
+  @apply flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600;
+}
+
+.user-avatar {
+  @apply w-8 h-8 rounded-full;
+}
+
+.footer {
+  @apply fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600;
+}
